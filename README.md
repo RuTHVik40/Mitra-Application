@@ -84,32 +84,22 @@ ShareTrack/
 - 👤 User profile management
 - 📱 Fully responsive mobile-first design
 
-## 📸 Application Screenshots
+## 📸 Application Output
 
-### 🔐 Authentication Screens
+## 🔐 Authentication Screens
+<p align="center">
+  <img src="assets/screens/signin.jpeg" width="280" style="margin-right: 40px;" />
+  <img src="assets/screens/signup.jpeg" width="280" />
+</p>
 
-**Sign In Page**  
-![Sign In](assets/screens/signin.png)
+## 📊 Dashboard Screens
+<p align="center">
+  <img src="assets/screens/dashboard-1.jpeg" width="280" style="margin-right: 40px;" />
+  <img src="assets/screens/dashboard-2.jpeg" width="280" />
+</p>
 
-**Sign Up Page**  
-![Sign Up](assets/screens/signup.png)
-
----
-
-### 📊 Dashboard Screens
-
-**Dashboard – Overview**  
-![Dashboard 1](assets/screens/dashboard-1.png)
-
-**Dashboard – Market Insights**  
-![Dashboard 2](assets/screens/dashboard-2.png)
-
----
-
-### 👤 Profile Screens
-
-**Profile – User Details**  
-![Profile 1](assets/screens/profile-1.png)
-
-**Profile – Settings & Preferences**  
-![Profile 2](assets/screens/profile-2.png)
+## 👤 Profile Screens
+<p align="center">
+  <img src="assets/screens/profile-1.jpeg" width="280" style="margin-right: 40px;" />
+  <img src="assets/screens/profile-2.jpeg" width="280" />
+</p>
