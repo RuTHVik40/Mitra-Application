@@ -1,160 +1,156 @@
-📈 ShareTrack – Trading & Portfolio Management App
+# 📈 ShareTrack – Trading & Portfolio Management App
 
 A production-ready React Native trading dashboard application built with Expo and Clerk Authentication, providing secure user authentication, portfolio tracking, market insights, and a modern dark-themed trading experience.
 
-<p align="center"> <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> <img src="https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white" /> <img src="https://img.shields.io/badge/Clerk-6C47FF?style=for-the-badge&logo=clerk&logoColor=white" /> <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" /> </p>
-✨ Features
-🔐 Authentication
+<p align="center">
+  <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white" />
+  <img src="https://img.shields.io/badge/Clerk-6C47FF?style=for-the-badge&logo=clerk&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+</p>
 
-Real user authentication using Clerk
+---
 
-Email & Password Sign In / Sign Up
+## ✨ Features
 
-Secure session handling
+### 🔐 Authentication
+- Real user authentication using Clerk
+- Email & Password Sign In / Sign Up
+- Secure session handling
+- Logout with session termination
+- Protected routes for authenticated users only
 
-Logout with session termination
+### 📊 Trading Dashboard
+- Portfolio value overview
+- Daily Profit & Loss (P&L)
+- Today’s gain percentage
+- Clean market performance cards
+- Visual indicators for profit and loss
 
-Protected routes for authenticated users only
+### 📈 Watchlist
+- Track popular stocks (AAPL, TSLA, GOOGL, MSFT)
+- Live-style price updates
+- Green indicators for gains
+- Red indicators for losses
 
-📊 Trading Dashboard
+### 👤 Profile & Account
+- View trader name and username
+- Unique Trader ID
+- Registered email
+- Account status (Active Trader)
+- Secure logout from profile screen
 
-Portfolio value overview
+### 🎨 User Experience
+- Modern dark-themed trading UI
+- Card-based dashboard layout
+- Responsive mobile design
+- Smooth navigation with Expo Router
 
-Daily Profit & Loss (P&L)
+---
 
-Today's gain percentage
+## 🧱 Tech Stack
 
-Live-style market cards
+| Technology | Purpose |
+|-----------|---------|
+| React Native | Cross-platform mobile development |
+| Expo | Development and build toolchain |
+| Expo Router | File-based navigation |
+| Clerk | Authentication and session management |
+| TypeScript | Type safety and scalability |
 
-Clean visual indicators for profit & loss
+---
 
-📈 Watchlist
+## 📱 App Screens
 
-Add and view popular stocks:
+- Sign In – Trading email & password login
+- Sign Up – Create trading account
+- Dashboard – Portfolio value, daily P&L, gains
+- Watchlist – Stock prices and movements
+- Profile – Trader details and account status
+- Security – Secure session and logout
 
-AAPL
+---
 
-TSLA
+## 🗂️ Project Structure
 
-GOOGL
-
-MSFT
-
-Color-coded price movements:
-
-🟢 Green → Profit
-
-🔴 Red → Loss
-
-👤 Profile & Account
-
-View:
-
-Full name
-
-Username
-
-Email address
-
-Unique Trader ID
-
-Account status (Active Trader)
-
-Secure session status
-
-Sign out safely from profile screen
-
-🎨 User Experience
-
-Modern dark trading UI
-
-Smooth card-based layout
-
-Minimal & professional design
-
-Responsive for mobile screens
-
-Intuitive navigation flow
-
-🧱 Tech Stack
-Technology	Purpose
-React Native	Cross-platform mobile app
-Expo	Development & build toolchain
-Expo Router	File-based navigation
-Clerk	Authentication & user sessions
-TypeScript	Type safety & scalability
-📱 App Screens
-<div align="center">
-Sign In	Sign Up
-Trading login with email & password	Create trading account
-<br/>
-Dashboard	Watchlist
-Portfolio overview & P&L	Tracked stocks with live-style prices
-<br/>
-Profile	Security
-Trader details & status	Secure session & logout
-</div>
-🗂️ Project Structure
 ShareTrack/
 ├── app/
-│   ├── (auth)/
-│   │   ├── sign-in.tsx        # Trading login screen
-│   │   └── sign-up.tsx        # Create trading account
-│   ├── (home)/
-│   │   ├── index.tsx          # Trading dashboard
-│   │   ├── watchlist.tsx      # Stock watchlist
-│   │   └── profile.tsx        # User profile
-│   ├── _layout.tsx            # Root layout with Clerk Provider
-│   └── styles.ts              # Shared styles
+│ ├── (auth)/
+│ │ ├── sign-in.tsx
+│ │ └── sign-up.tsx
+│ ├── (home)/
+│ │ ├── index.tsx
+│ │ ├── watchlist.tsx
+│ │ └── profile.tsx
+│ ├── _layout.tsx
+│ └── styles.ts
 ├── components/
-│   ├── SignOutButton.tsx      # Secure logout
-│   └── themed-*.tsx           # Themed UI components
-├── assets/                    # Icons, images
-├── hooks/                     # Custom hooks
-├── constants/                 # App constants
-├── .env                       # Environment variables
+│ ├── SignOutButton.tsx
+│ └── themed-components.tsx
+├── assets/
+├── hooks/
+├── constants/
+├── .env
 └── README.md
 
-🚀 Quick Start
-1️⃣ Clone the Repository
-git clone https://github.com/RuTHVik40/ShareTrack.git
+yaml
+Copy code
+
+---
+
+## 🚀 Quick Start
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/your-username/ShareTrack.git
 cd ShareTrack
-
 2️⃣ Install Dependencies
-
-⚠️ Important:
-Due to Expo + Clerk peer dependency conflicts, install using:
-
+bash
+Copy code
 npm install --legacy-peer-deps
-
 3️⃣ Environment Setup
-
 Create a .env file in the root directory:
 
+env
+Copy code
 EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+Get your key from:
 
-
-📌 Get your key from:
-
-https://dashboard.clerk.com
-
-Go to API Keys
-
-Copy Publishable Key
+https://dashboard.clerk.com → API Keys → Publishable Key
 
 4️⃣ Run the App
+bash
+Copy code
 npx expo start
-
-Run on:
 Platform	Action
-📱 Expo Go	Scan QR code
-🌐 Web	Press w
-🤖 Android	Press a
-🍎 iOS	Press i
+Expo Go	Scan QR code
+Web	Press w
+Android Emulator	Press a
+iOS Simulator	Press i
+
 🔐 Authentication Flow
+mermaid
+Copy code
+graph TD
+A[Launch App] --> B{Authenticated?}
+B -->|No| C[Sign In / Sign Up]
+C --> D[Clerk Authentication]
+D --> E[Dashboard]
+B -->|Yes| E
+E --> F[Profile]
+F --> G[Logout]
+G --> C
+📋 Functional Flow
+Unauthenticated Users
+Access Sign In and Sign Up screens only
 
+Authenticated Users
+Access dashboard, watchlist, and profile
 
-🎯 Key Highlights
+Secure logout available anytime
+
+🎯 Highlights
 Feature	Status
 Real Authentication	✅
 Secure Sessions	✅
@@ -162,24 +158,22 @@ Trading Dashboard	✅
 Watchlist	✅
 Profile & Trader ID	✅
 Dark Mode UI	✅
-Production-ready	✅
+Production Ready	✅
 
-🧪 Debug & Dev Commands
-# Clear cache
+🧪 Developer Commands
+bash
+Copy code
 npx expo start --clear
-
-# Reset project
 npx expo reset-project
-
-# Type check
 npx tsc --noEmit
-
+📄 License
+This project is built for learning and academic demonstration purposes.
+All authentication data is securely managed by Clerk.
 
 🙏 Acknowledgments
+Clerk for secure authentication
 
-Clerk – Secure authentication
-
-Expo – Smooth developer experience
+Expo for seamless development
 
 React Native community
 
