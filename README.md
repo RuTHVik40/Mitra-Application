@@ -1,186 +1,115 @@
-📈 ShareTrack – Trading & Portfolio Management App
+# 📈 ShareTrack – Trading & Portfolio Management App
 
 A production-ready React Native trading dashboard application built with Expo and Clerk Authentication, providing secure user authentication, portfolio tracking, market insights, and a modern dark-themed trading experience.
 
-<p align="center"> <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> <img src="https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white" /> <img src="https://img.shields.io/badge/Clerk-6C47FF?style=for-the-badge&logo=clerk&logoColor=white" /> <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" /> </p>
-✨ Features
-🔐 Authentication
+<p align="center">
+  <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white" />
+  <img src="https://img.shields.io/badge/Clerk-6C47FF?style=for-the-badge&logo=clerk&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+</p>
 
-Real user authentication using Clerk
+---
+## ✅ Prerequisites
 
-Email & Password Sign In / Sign Up
+Make sure the following are installed on your system:
 
-Secure session handling
+- **Node.js** (v18 or above recommended)
+- **npm**
+- **Expo Go app** (Android or iOS)
+- A **Clerk account** for authentication keys
 
-Logout with session termination
+---
 
-Protected routes for authenticated users only
+## 📥 Clone the Repository
 
-📊 Trading Dashboard
-
-Portfolio value overview
-
-Daily Profit & Loss (P&L)
-
-Today's gain percentage
-
-Live-style market cards
-
-Clean visual indicators for profit & loss
-
-📈 Watchlist
-
-Add and view popular stocks:
-
-AAPL
-
-TSLA
-
-GOOGL
-
-MSFT
-
-Color-coded price movements:
-
-🟢 Green → Profit
-
-🔴 Red → Loss
-
-👤 Profile & Account
-
-View:
-
-Full name
-
-Username
-
-Email address
-
-Unique Trader ID
-
-Account status (Active Trader)
-
-Secure session status
-
-Sign out safely from profile screen
-
-🎨 User Experience
-
-Modern dark trading UI
-
-Smooth card-based layout
-
-Minimal & professional design
-
-Responsive for mobile screens
-
-Intuitive navigation flow
-
-🧱 Tech Stack
-Technology	Purpose
-React Native	Cross-platform mobile app
-Expo	Development & build toolchain
-Expo Router	File-based navigation
-Clerk	Authentication & user sessions
-TypeScript	Type safety & scalability
-📱 App Screens
-<div align="center">
-Sign In	Sign Up
-Trading login with email & password	Create trading account
-<br/>
-Dashboard	Watchlist
-Portfolio overview & P&L	Tracked stocks with live-style prices
-<br/>
-Profile	Security
-Trader details & status	Secure session & logout
-</div>
-🗂️ Project Structure
-ShareTrack/
-├── app/
-│   ├── (auth)/
-│   │   ├── sign-in.tsx        # Trading login screen
-│   │   └── sign-up.tsx        # Create trading account
-│   ├── (home)/
-│   │   ├── index.tsx          # Trading dashboard
-│   │   ├── watchlist.tsx      # Stock watchlist
-│   │   └── profile.tsx        # User profile
-│   ├── _layout.tsx            # Root layout with Clerk Provider
-│   └── styles.ts              # Shared styles
-├── components/
-│   ├── SignOutButton.tsx      # Secure logout
-│   └── themed-*.tsx           # Themed UI components
-├── assets/                    # Icons, images
-├── hooks/                     # Custom hooks
-├── constants/                 # App constants
-├── .env                       # Environment variables
-└── README.md
-
-🚀 Quick Start
-1️⃣ Clone the Repository
+```bash
 git clone https://github.com/RuTHVik40/ShareTrack.git
 cd ShareTrack
+```
 
-2️⃣ Install Dependencies
-
-⚠️ Important:
-Due to Expo + Clerk peer dependency conflicts, install using:
-
+## 📦 Install Dependencies
+```bash
 npm install --legacy-peer-deps
+```
 
-3️⃣ Environment Setup
+## 🔐 Environment Configuration
 
-Create a .env file in the root directory:
-
+Create a .env file in the root directory of the project and add:
+```bash
 EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+```
+## Get Clerk Publishable Key
 
+1. Go to https://dashboard.clerk.com
+2. Select your application
+3. Navigate to API Keys
+4. Copy the Publishable Key
 
-📌 Get your key from:
+## ▶️ Run the Application
 
-https://dashboard.clerk.com
-
-Go to API Keys
-
-Copy Publishable Key
-
-4️⃣ Run the App
+Start the Expo development server:
+```bash
 npx expo start
+```
 
-Run on:
-Platform	Action
-📱 Expo Go	Scan QR code
-🌐 Web	Press w
-🤖 Android	Press a
-🍎 iOS	Press i
-🔐 Authentication Flow
+## 🗂️ Project Structure
+```bash
+ShareTrack/
+├── app/
+│ ├── (auth)/
+│ │ ├── _layout.tsx
+│ │ ├── sign-in.tsx
+│ │ └── sign-up.tsx
+│ ├── (home)/
+│ │ ├── _layout.tsx
+│ │ ├── index.tsx
+│ │ └── profile.tsx
+│ ├── _layout.tsx
+│ └── styles.ts
+├── components/
+├── assets/
+├── hooks/
+├── constants/
+├── .env
+└── README.md
+```
 
+## ✨ Features
 
-🎯 Key Highlights
-Feature	Status
-Real Authentication	✅
-Secure Sessions	✅
-Trading Dashboard	✅
-Watchlist	✅
-Profile & Trader ID	✅
-Dark Mode UI	✅
-Production-ready	✅
+- 🔐 Secure authentication using Clerk (Email / Social Login)
+- 📊 Portfolio overview with profit & loss insights
+- 📈 Market watchlist with real-time styled UI
+- 🌙 Modern dark-themed trading dashboard
+- 👤 User profile management
+- 📱 Fully responsive mobile-first design
 
-🧪 Debug & Dev Commands
-# Clear cache
-npx expo start --clear
+## 📸 Application Screenshots
 
-# Reset project
-npx expo reset-project
+### 🔐 Authentication Screens
 
-# Type check
-npx tsc --noEmit
+**Sign In Page**  
+![Sign In](assets/screens/signin.png)
 
+**Sign Up Page**  
+![Sign Up](assets/screens/signup.png)
 
-🙏 Acknowledgments
+---
 
-Clerk – Secure authentication
+### 📊 Dashboard Screens
 
-Expo – Smooth developer experience
+**Dashboard – Overview**  
+![Dashboard 1](assets/screens/dashboard-1.png)
 
-React Native community
+**Dashboard – Market Insights**  
+![Dashboard 2](assets/screens/dashboard-2.png)
 
-Modern trading apps for UI inspiration
+---
+
+### 👤 Profile Screens
+
+**Profile – User Details**  
+![Profile 1](assets/screens/profile-1.png)
+
+**Profile – Settings & Preferences**  
+![Profile 2](assets/screens/profile-2.png)
